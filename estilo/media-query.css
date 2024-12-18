@@ -34,6 +34,14 @@ Telas grandes: acima de 1200
     div#formulario > p{
         font-size: 1em;
     }
+
+    form > input[type=submit]{
+        max-width: 50%;
+    }
+
+    form > a.botao{
+        max-width: 50%;
+    }
 }
 
 /*TELAS MAIORES QUE TABLET*/
@@ -60,5 +68,13 @@ Telas grandes: acima de 1200
 
     div#formulario > p{
         font-size: 1.1em;
+    }
+
+    form > input[type=submit]{
+        max-width: 50%;
+    }
+
+    form > a.botao{
+        max-width: 50%;
     }
 }

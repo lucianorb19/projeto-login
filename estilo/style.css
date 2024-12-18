@@ -68,3 +68,61 @@ div#formulario > h1{
 div#formulario > p{
     font-size: 0.8em;
 }
+
+
+form > div.campo{
+    background-color: #5f2c82;
+    display: block;/*nem precisa-div já é display block*/
+    width: 90%;
+    height: 40px;
+    border-radius: 7px;
+    margin: 5px 0px;/*em cima e embaixo- 5px. Dos lados-0px*/
+    padding: 3px;
+}
+
+/*label filho imediato de div da classe campo*/
+div.campo > label{
+    display: none;
+}
+
+/*botão do tipo submit filho imediato de form*/
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 90%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/*Passando o mouse sobre botão tipo submit filho imediato de form*/
+form > input[type=submit]:hover{
+    background-color: #2d615f;
+}
+
+/*link da classe botao filho imediato de form*/
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 90%;
+    height: 40px;
+    padding-top: 3px;
+    margin-top: 8px;
+    background-color: white;
+    color: #2d6462;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a.botao:hover{
+    background-color: #6cd3cf;
+}
+
+form > a.botao > i{
+    font-size: 0.8em;
+}
