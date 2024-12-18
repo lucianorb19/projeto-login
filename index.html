@@ -20,27 +20,33 @@
 <body>
     <main>
         <section id="login">
+            <!--Div imagem-->
             <div id="imagem">
             
             </div>
             
             <div id="formulario">
-                <!--Parte fomulário login-->
+                <!--Div login-->
                 <h1>login</h1>
                 <p>Seja bem-vindo(a) ! Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="login.php" method="post">
                     <div>
                         <!--Ícone usuário-->
                         <span class="material-icons">person</span>
-                        <input type="email" name="email" id="id_email" placeholder="seu e-mail" required>
+                        <input type="email" name="email" id="id_email" placeholder="seu e-mail" autocomplete="email" maxlength="30" required>
                         <label for="id_email">E-mail </label>
                     </div>
                     <div>
                         <!--Ícone senha-->
                         <span class="material-icons">vpn_key</span>
-                        <input type="password" name="senha" id="id_senha" placeholder="sua senha" required>
+                        <input type="password" name="senha" id="id_senha" placeholder="sua senha" autocomplete="current-password" minlength="8" maxlength="20">
                         <label for="id_senha">Senha </label>
                     </div>
+                    <input type="submit" value="Entrar">
+                    <!--Remendo pro butão esqueci senha, que deveria ser feito com js, mas aqui vai ser remendado com link-->
+                    <a href="esqueci.html">
+                        Esqueci a senha <span class="material-icons">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
