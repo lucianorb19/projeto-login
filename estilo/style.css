@@ -33,18 +33,19 @@ section#login{
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    
     /*Tudo o que sair da section, é escondido. Resolve o problema das bordas pontudas, o que também poderia ser feito usando o border-radius no section#login > div#imagem*/
     overflow:hidden;
     
     background-color: white;
     width: 280px;
-    height: 500px;
+    height: 520px;
     border-radius: 15px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.566);
     /*Efeito para atrasar a transição de largura e altura*/
     transition: width .3s, height .3s;
     transition-timing-function: ease;/*suavidade da transação*/
+    transform: translate(-50%,-50%);
 }
 
 section#login > div#imagem{
@@ -66,23 +67,56 @@ div#formulario > h1{
 }
 
 div#formulario > p{
-    font-size: 0.8em;
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 10px 2px;
 }
 
 
 form > div.campo{
     background-color: #5f2c82;
+    border: 3px solid #5f2c82;
     display: block;/*nem precisa-div já é display block*/
     width: 90%;
     height: 40px;
     border-radius: 7px;
-    margin: 5px 0px;/*em cima e embaixo- 5px. Dos lados-0px*/
-    padding: 3px;
+    /*margin: 5px 0px;/*em cima e embaixo- 5px. Dos lados-0px*/
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /*label filho imediato de div da classe campo*/
 div.campo > label{
     display: none;
+}
+
+/*Ícones*/
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+/*Campos e-mail e senha*/
+div.campo > input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    /*largura do input será a janela toda menos 45px (pra caber o ícone)*/
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 7px;
+    padding: 4px;
+    /*Campo pra 1.5px direita e 14px pra cima
+    Usar transform sempre por último*/ 
+    transform: translate(1.5px, -14px);
+}
+
+/*Quando estiver digitando na caixa*/
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 /*botão do tipo submit filho imediato de form*/
@@ -96,6 +130,8 @@ form > input[type=submit]{
     border: none;
     border-radius: 7px;
     cursor: pointer;
+    margin: auto;
+    margin-top: 15px;
 }
 
 /*Passando o mouse sobre botão tipo submit filho imediato de form*/
@@ -117,6 +153,8 @@ form > a.botao{
     border: 1px solid #49a09d;
     border-radius: 7px;
     text-decoration: none;
+    margin: auto;
+    margin-top: 5px;
 }
 
 form > a.botao:hover{
