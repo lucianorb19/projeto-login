@@ -30,6 +30,10 @@ Telas grandes: acima de 1200
         float: right;/*Com display block, float right, div fica à direita*/
         width: 70%;
     }
+
+    div#formulario > p{
+        font-size: 1em;
+    }
 }
 
 /*TELAS MAIORES QUE TABLET*/
@@ -44,13 +48,17 @@ Telas grandes: acima de 1200
     }
 
     section#login > div#imagem{
-        float: left;
+        float: right;
         width: 40%;
         height: 100%;
     }
 
     section#login > div#formulario{
-        float:right;
+        float:left;
         width: 60%;
+    }
+
+    div#formulario > p{
+        font-size: 1.1em;
     }
 }

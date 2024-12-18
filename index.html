@@ -8,6 +8,15 @@
 
     <!--CSSs demais formatos-->
     <link rel="stylesheet" href="estilo/media-query.css">
+
+    <style>
+        img#usuario{
+            display: inline;
+            width: 1em;
+            height: 1em;
+        }
+    </style>
+
     
     
     <title>Login</title>
@@ -24,7 +33,18 @@
                 <h1>login</h1>
                 <p>Seja bem-vindo(a) ! Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="login.php" method="post">
+                    <div>
+                        <!--Ícone usuário-->
+                        <img id="usuario" src="imagens/person.png" alt="Ícone Usuário">
+                        <input type="email" name="email" id="id_email" placeholder="seu e-mail" required>
+                        <label for="id_email">E-mail </label>
+                    </div>
+                    <div>
+                        <!--Ícone senha-->
 
+                        <input type="password" name="senha" id="id_senha" placeholder="sua senha" required>
+                        <label for="id_senha">Senha </label>
+                    </div>
                 </form>
             </div>
         </section>
