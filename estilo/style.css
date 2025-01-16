@@ -69,6 +69,7 @@ div#formulario > h1{
 div#formulario > p{
     font-size: 0.9em;
     text-align: justify;
+    /*margin: 10px 2px;/*em cima e embaixo- 10px. Dos lados-2px*/
     margin: 10px 2px;
 }
 
@@ -80,7 +81,6 @@ form > div.campo{
     width: 90%;
     height: 40px;
     border-radius: 7px;
-    /*margin: 5px 0px;/*em cima e embaixo- 5px. Dos lados-0px*/
     margin: auto;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -109,9 +109,9 @@ div.campo > input{
     border: 0px;
     border-radius: 7px;
     padding: 4px;
-    /*Campo pra 1.5px direita e 14px pra cima
+    /*Campo 0.5px direita e 14px pra cima
     Usar transform sempre por último*/ 
-    transform: translate(1.5px, -14px);
+    transform: translate(0.5px, -13px);
 }
 
 /*Quando estiver digitando na caixa*/
@@ -146,7 +146,7 @@ form > a.botao{
     font-size: 1em;
     width: 90%;
     height: 40px;
-    padding-top: 3px;
+    padding-top: 1.5px;
     margin-top: 8px;
     background-color: white;
     color: #2d6462;
@@ -163,4 +163,10 @@ form > a.botao:hover{
 
 form > a.botao > i{
     font-size: 0.8em;
+}
+
+/*Mover ícone de e-mail para alinhar com o texto "esqueci a senha"*/
+form > a.botao > span.material-icons{
+                   /*direita  baixo*/
+    transform: translate(0px, 5px)
 }
